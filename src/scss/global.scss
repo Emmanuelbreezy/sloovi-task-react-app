@@ -1,0 +1,22 @@
+@use './abstract/color' as *;
+@use './abstract/fonts' as *;
+
+$primary:  $primaryBrand;
+
+html body {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+  }
+   body{
+       background-color: $bodyColor !important;
+      overflow-x:hidden !important;
+   } 
+
+@import "~bootstrap/scss/bootstrap"; 
+@import "~react-datepicker/dist/react-datepicker.css";
+
+@import 'components/home';
+@import 'components/login';
+@import 'components/alert';
+@import 'components/overlay';

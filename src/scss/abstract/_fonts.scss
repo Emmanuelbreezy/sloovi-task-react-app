@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:wght@400;700&display=swap');
+
+
+$fontfamily: 'Noto Sans', sans-serif; //default font
+
+.fontFamily100{
+    font-family: $fontfamily !important;
+    font-weight: 100 !important;
+}
+
+.fontFamily200{
+    font-family: $fontfamily !important;
+    font-weight: 200 !important;
+}
+
+.fontFamily300{
+    font-family: $fontfamily !important;
+    font-weight: 300 !important;
+}
+
+.fontFamily400{
+    font-family: $fontfamily !important;
+    font-weight: 400 !important;
+}
+.fontFamily500{
+    font-family: $fontfamily !important;
+    font-weight: 500 !important;
+}
+.fontFamily600{
+    font-family: $fontfamily !important;
+    font-weight: 600 !important;
+}
+.fontFamily700{
+    font-family: $fontfamily !important;
+    font-weight: 700 !important;
+}
+.fontFamily800{
+    font-family: $fontfamily !important;
+    font-weight: 800 !important;
+}
+.fontFamily900{
+    font-family: $fontfamily !important;
+    font-weight: 900 !important;
+}

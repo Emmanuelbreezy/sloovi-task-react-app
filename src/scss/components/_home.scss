@@ -1,0 +1,357 @@
+
+
+.slv-home-container{
+    width: 100%;
+    height: 90vh;
+
+    .container{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .slv-col-home-container{
+            h3{
+                text-align: center;
+                margin-bottom: 20px;
+                @extend .fontFamily700;
+            }
+
+            .list-task-container{
+    
+                .card{
+                    border-radius: 5px;
+                    border: 1px solid rgba($color: #333, $alpha: 0.3);
+                    background-color: transparent;
+                    @extend .shadow-sm;
+
+                    .card-body{
+                        padding: 0 !important;
+
+                        .list-task-content-nav{
+                            display: flex;
+                            align-items: center;
+                            background-color: #eee;
+                            border-top-right-radius: 5px;
+                            border-top-left-radius: 5px;
+                           
+
+                            .list-task-leftnav{
+                                flex-grow: 1;
+                                display: flex;
+                                align-items: center;
+                                padding: 7px 15px;
+
+
+                                .list-task-title{
+                                    font-size: 13.5px;
+                                    text-transform: uppercase;
+                                    color: #333;
+                                    @extend .fontFamily600;
+                                }
+                            }
+
+                            .list-task-icon.button-div{
+                                width: auto;
+                                border-left: 1px solid rgba($color: #333, $alpha: 0.3);
+
+                                button{
+                                    padding: 6px 8px;
+                                    border: none !important;
+                                    background-color: transparent;
+                                    border-top-right-radius: 5px;
+                                    border-bottom-right-radius: 5px;
+
+                                    &:hover{
+                                        background-color: #ddd;
+                                    }
+                                }
+                            }
+                        }
+
+                        .list-task-body{
+                            width: 100%;
+                            transition: all .3s ease-in-out;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+
+                            .add_or_edit-task-container{
+                                width: 100%;
+                                padding: 15px 15px;
+                                padding-bottom: 15px !important;
+                                border-bottom-left-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                                background-color: $addTaskBg;
+                                border-top: 1px solid rgba($color: #333, $alpha: 0.3);
+
+                                .add_or_edit-task-content{
+
+                                    .slv-add-task-form{
+
+                                        label{
+                                            font-size: 13.5px;
+                                            @extend .fontFamily400;
+                                        }
+
+                                        .form-control.is-invalid{
+                                            background-image: none !important;
+                                        }
+
+                                        .invalid-fbk{
+                                            font-size: 11px;
+                                            color: red;
+                                            margin-top: 3px;
+                                            margin-left: 3px;
+                                            @extend .fontFamily400;
+                                        }
+
+                                        .form-control{
+                                            box-shadow: rgb(220, 223, 229) 0px 0px 0px 1px;
+                                            font-size: 13px !important;
+                                            font-weight: normal;
+                                            width: 100%;
+                                            border: none;
+                                            border-radius: 5px;
+                                            padding: 8px 12px 8px 12px ;
+                                            @extend .fontFamily400;
+                                        }
+
+                                        .react-datepicker__tab-loop{
+                                            .react-datepicker-popper{
+
+                                                .react-datepicker{
+                                                    .react-datepicker__month-container{
+
+                                                        .react-datepicker__header {
+                                                            background-color:  #fff !important;
+                                                            border-bottom: none !important;
+                                                        }
+                                                    }
+
+                                                    .react-datepicker__time-container{
+                                                        .react-datepicker__header{
+                                                            background-color: #fff !important;
+                                                            border-bottom: none !important;
+                                                            .react-datepicker-time__header{
+                                                                display: none !important;
+                                                                
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .css-6j8wv5-Input,.css-qc6sy-singleValue,.css-14el2xx-placeholder, 
+                                        .css-jzldcf-Input{
+                                            font-size: 13px !important;
+                                            @extend .fontFamily400;
+                                        }
+
+                                        .css-6j8wv5-Input,.css-qc6sy-singleValue,.css-14el2xx-placeholder, 
+                                        .css-jzldcf-Input{
+                                            cursor: pointer !important;
+
+                                            
+                                            &:focus{
+                                                border: none !important;
+                                                box-shadow: none !important;
+                                            }
+                                        }
+
+                                        .css-869iym-control{
+                                            border-color: #ddd !important;
+                                            box-shadow:  none !important;
+
+                                        }
+
+                                         .css-hn46gs-control{
+                                            cursor: pointer !important;
+                                            border-radius: 5px;
+                                            padding: 0px 12px 0px 12px !important;
+                                        }
+        
+
+
+                                        .form-button-group{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+
+                                            
+                                            .delete_task_div{
+                                                button{
+                                                    padding-left: 0px !important;
+                                                    padding-right: 0px !important; 
+                                                    background-color: transparent;
+                                                    border: none;
+                                                    cursor: pointer;
+
+                                                    svg{
+                                                        width: 18px;
+                                                        height: 18px;
+                                                        stroke: rgba($color: #333, $alpha: 0.7);
+
+                                                        &:hover{
+                                                          stroke: #333;
+
+                                                        }
+                                                    }
+
+                                                    
+
+                                                }
+                                            }
+
+                                            .button-group-div{
+                                                width: 100%;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: flex-end;
+
+                                                button{
+                                                    font-size: 13px;
+                                                    border-radius: 5px;
+                                                    padding-left: 25px;
+                                                    padding-right: 25px;
+                                                    border: none;
+                                                    @extend .fontFamily600;
+                                                    
+                                                    &:focus{
+                                                        box-shadow: none;
+                                                    }
+                                                    
+                                                }
+    
+                                                .form-cancel-button{
+                                                    background-color: transparent !important;
+                                                    color:  rgba($color: #333, $alpha: 0.7);
+                                                    &:hover{
+                                                        background-color: #ddd;
+                                                    }
+                                                }
+    
+                                                .form-save-button{
+                                                    color:  #f2f2f2;
+                                                    background-color: $saveTaskBg;
+    
+                                                    &:hover{
+                                                        background-color: rgba($saveTaskBg, $alpha: 0.8);
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+
+
+                                
+                            }
+                            .alltask-container-list{
+                                width: 100%;
+                                padding: 0px 0px;
+                                height: auto;
+                                max-height: 400px;
+                                overflow-x: hidden;
+
+                                overflow-y: auto;
+                                border-bottom-left-radius: 5px;
+                                border-bottom-right-radius: 5px;
+
+                                .alltask-list-ul{
+                                    list-style: none;
+                                    padding: 0 !important;
+                                    margin: 0 !important;
+
+                                    .task-item{
+                                        display: flex;
+                                        align-items: center;
+                                        background-color: #fff;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        padding-left: 15px;
+                                        padding-right: 15px;
+                                        border-bottom: 1px solid #eee;
+
+                                        .task-item-left{
+                                            flex-grow: 1;
+                                            display: flex;
+                                            align-items: flex-start;
+
+                                            .task-item-left-img{
+                                                width: 40px;
+                                                height: 40px;
+                                                background-color: #eee;
+                                                border-radius: 8px;
+                                                margin-right: 8px;
+
+                                                img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: cover;
+                                                    border-radius: 8px;
+                                                }
+                                            }
+
+                                            .task-item-left-content{
+                                                h5{
+                                                    font-size: 14px !important;
+                                                    @extend .fontFamily500;
+                                                    margin-bottom: 0 !important;
+                                                    padding-bottom: 0 !important;
+                                                    line-height: 10px;
+                                                    margin-top: 5px;
+                                                    text-transform: capitalize;
+
+                                                }
+
+                                                span{
+                                                    font-size: 13px !important;
+                                                    color: rgb(156, 23, 23);
+                                                    @extend .fontFamily400;
+                                                }
+                                            }
+
+                                        }
+
+                                        .task-item-right{
+                                            display: flex;
+                                            align-items: center;
+
+                                            button{
+                                                padding: 6px 6px;
+                                                border: 2px solid #ddd !important;
+                                                background-color: transparent;
+                                                border-radius: 5px;
+                                                display: flex;
+                                                align-items: center;
+                                                box-shadow: rgba(0, 0, 0, 0.055) 0px 0.105rem 0.15rem !important;
+                                                
+
+                                                svg{
+                                                    width: 15px;
+                                                    height: 15px;
+                                                    stroke: #333;
+                                                }
+
+                                                &:hover{
+                                                    background-color: #eee;
+                                                } 
+                                            }
+                                        }
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
